@@ -1,0 +1,7 @@
+repos:
+  - repo: [https://github.com/posener/goreadme](https://github.com/posener/goreadme)
+    rev: v1.4.2 # Use the latest ref
+    hooks:
+      - id: goreadme
+        entry: env README_FILE=README.md goreadme
+        args: ['-badge-goreadme=true', '-badge-godoc=true']
